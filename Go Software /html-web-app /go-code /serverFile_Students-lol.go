@@ -73,6 +73,37 @@ func appHandler(w http.ResponseWriter, r *http.Request) {
   }  //. .  pageData
   
   
+  if pagePath == "/user" {
+      pageTitle = "User Page"
+      pageList = pageList
+  }
+  
+  if pagePath == "/account" {
+      pageTitle = "Account Page"
+      pageList = pageList
+  }
+  
+  if pagePath == "/profile" {
+      pageTitle = "Profile Page"
+      pageList = pageList
+  }
+  
+  
+  
+  if pagePath == "/portfolio" {
+      pageTitle = "Portfolio Page"
+      pageList = pageList
+  }
+  
+  if pagePath == "/resume" {
+      pageTitle = "Resume Page"
+      pageList = pageList
+  }
+  
+  if pagePath == "/settings" {
+      pageTitle = "Settings Page"
+      pageList = pageList
+  }
   
 
  
@@ -95,7 +126,17 @@ func main() {
   appName := "www.Students.lol/ - Website App"
 
 
-
+  http.HandleFunc("/", indexHandler)
+  
+  http.HandleFunc("/user", indexHandler)
+  http.HandleFunc("/account", indexHandler)
+  http.HandleFunc("/profile", indexHandler)
+  
+  http.HandleFunc("/portfolio", indexHandler)
+  http.HandleFunc("/resume", indexHandler)
+  
+  http.HandleFunc("/settings", indexHandler)
+  
 
 
 
