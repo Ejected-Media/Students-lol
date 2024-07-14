@@ -33,6 +33,100 @@ type pageNav struct {
 }
 
 
+// ,  ° . +
+func addTravelLog(ctx context.Context, client *firestore.Client, addTravelLog) error {
+  _TravelLogData := addTravelLog
+
+  _, err := client.Collection("_TravelLog").Doc("_TravelLog").Set(ctx, _TravelLogData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+} // , - • ~
+
+
+// ,  ° . +
+func addUser(ctx context.Context, client *firestore.Client, addTravelLog) error {
+  _TravelLogData := addTravelLog
+
+  _, err := client.Collection("_TravelLog").Doc("_TravelLog").Set(ctx, _TravelLogData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+} // , - • ~
+
+// ,  ° . +
+func addAccount(ctx context.Context, client *firestore.Client, addTravelLog) error {
+  _TravelLogData := addTravelLog
+
+  _, err := client.Collection("_TravelLog").Doc("_TravelLog").Set(ctx, _TravelLogData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+} // , - • ~
+
+// ,  ° . +
+func addProfile(ctx context.Context, client *firestore.Client, addTravelLog) error {
+  _TravelLogData := addTravelLog
+
+  _, err := client.Collection("_TravelLog").Doc("_TravelLog").Set(ctx, _TravelLogData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+} // , - • ~
+
+// ,  ° . +
+func addPortfolio(ctx context.Context, client *firestore.Client, addTravelLog) error {
+  _TravelLogData := addTravelLog
+
+  _, err := client.Collection("_TravelLog").Doc("_TravelLog").Set(ctx, _TravelLogData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+} // , - • ~
+
+// ,  ° . +
+func addResume(ctx context.Context, client *firestore.Client, addTravelLog) error {
+  _TravelLogData := addTravelLog
+
+  _, err := client.Collection("_TravelLog").Doc("_TravelLog").Set(ctx, _TravelLogData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+} // , - • ~
+
+// ,  ° . +
+func addSettings(ctx context.Context, client *firestore.Client, addTravelLog) error {
+  _TravelLogData := addTravelLog
+
+  _, err := client.Collection("_TravelLog").Doc("_TravelLog").Set(ctx, _TravelLogData)
+        
+  if err != nil {
+    // Handle any errors
+    log.Printf("An error has occurred: %s", err)
+  }
+  return err
+} // , - • ~
+
+
+
 
 
 
