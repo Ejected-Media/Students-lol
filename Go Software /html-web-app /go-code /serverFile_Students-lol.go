@@ -18,7 +18,7 @@ import (
 )
 
 
-
+// ,  ° . +
 type htmlPageData struct {
     pageTitle string
     pagePath string
@@ -26,7 +26,7 @@ type htmlPageData struct {
     
 }
 
-
+// ,  ° . +
 type pageNav struct {
     pageTitle string
     pageLink string
@@ -130,7 +130,7 @@ func addSettings(ctx context.Context, client *firestore.Client, addTravelLog) er
 
 
 
-
+// ,  ° . +
 func app_welcome_center_page() {
     
     
@@ -154,6 +154,7 @@ func appHandler(w http.ResponseWriter, r *http.Request) {
   pageType := ".."
   
   
+  // ,  ° . +
   pageData := htmlPageData {
       pageTitle: pageTitle,
       pagePath: pagePath,
@@ -167,6 +168,7 @@ func appHandler(w http.ResponseWriter, r *http.Request) {
   }  //. .  pageData
   
   
+  // ,  ° . +
   if pagePath == "/user" {
       pageTitle = "User Page"
       pageList = pageList
@@ -183,7 +185,7 @@ func appHandler(w http.ResponseWriter, r *http.Request) {
   }
   
   
-  
+  // ,  ° . +
   if pagePath == "/portfolio" {
       pageTitle = "Portfolio Page"
       pageList = pageList
@@ -202,7 +204,7 @@ func appHandler(w http.ResponseWriter, r *http.Request) {
 
  
   
-  
+  // ,  ° . +
   
   pageFilePath := template.Must(template.ParseFiles("layout_main_page.html"))
   pageFilePath.Execute(w, pageData)
@@ -210,25 +212,30 @@ func appHandler(w http.ResponseWriter, r *http.Request) {
 }  //  .  appHandler
 
 
-
-
 //  .  html url routes 
 //  .  as well as terminal cli logs
 
+
+
+// ,  ° . +
 func main() {
 
+// ,  ° . +
   appName := "www.Students.lol/ - Website App"
 
-
+// ,  ° . +
   http.HandleFunc("/", indexHandler)
   
+  // ,  ° . +
   http.HandleFunc("/user", indexHandler)
   http.HandleFunc("/account", indexHandler)
   http.HandleFunc("/profile", indexHandler)
   
+  // ,  ° . +
   http.HandleFunc("/portfolio", indexHandler)
   http.HandleFunc("/resume", indexHandler)
   
+  // ,  ° . +
   http.HandleFunc("/settings", indexHandler)
   
 
