@@ -238,6 +238,27 @@ func main() {
   // ,  ° . +
   http.HandleFunc("/settings", indexHandler)
   
+    // ,  ° . +
+  http.HandleFunc("/dashboard", indexHandler)
+  
+    // ,  ° . +
+  http.HandleFunc("/classes", indexHandler)
+  
+    // ,  ° . +
+  http.HandleFunc("/friends", indexHandler)
+  
+    // ,  ° . +
+  http.HandleFunc("/teachers", indexHandler)
+  
+    // ,  ° . +
+  http.HandleFunc("/rooms", indexHandler)
+  
+    // ,  ° . +
+  http.HandleFunc("/homework", indexHandler)
+  
+  
+    // ,  ° . +
+  http.HandleFunc("/settings", indexHandler)
 
 
 
