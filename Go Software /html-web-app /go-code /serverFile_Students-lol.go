@@ -256,11 +256,26 @@ func main() {
     // ,  ° . +
   http.HandleFunc("/homework", indexHandler)
   
-  
     // ,  ° . +
-  http.HandleFunc("/settings", indexHandler)
+  http.HandleFunc("/events", indexHandler)
+  
+      // ,  ° . +
+  http.HandleFunc("/topics", indexHandler)
+  
+      // ,  ° . +
+  http.HandleFunc("/homework", indexHandler)
+  
+      // ,  ° . +
+  http.HandleFunc("/recess", indexHandler)
 
-
+    // ,  ° . +
+  http.HandleFunc("/playground", indexHandler)
+  
+      // ,  ° . +
+  http.HandleFunc("/locations", indexHandler)
+  
+      // ,  ° . +
+  http.HandleFunc("/assignments", indexHandler)
 
 
 // -- -
